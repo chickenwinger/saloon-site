@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(30, 30, 30) 17%, turquoise 100%) no-repeat fixed;
+}
+
+.reg-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    right: 0;
+    left: 0;
+    width: 85vw;
+    height: 33vw;
+    padding-left: 2vw;
+    border-spacing: 0;
+    border-radius: 10px;
+    background: white;
+    font-family: Verdana;
+    animation: reg-form-anim 1.5s forwards;
+}
+
+.reg-form tr td input,
+.reg-form tr td select {
+    font-size: 16px;
+    background: rgb(30, 30, 30);
+    outline: none;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    color: cyan;
+    padding: 8px 5px 8px 10px;
+}
+
+input[type=radio] {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.reg-labels {
+    text-align: right;
+    padding-right: 2vw;
+    font-weight: 600;
+}
+
+.small-input {
+    width: 10vw;
+}
+
+.large-input {
+    width: 24.5vw;
+}
+
+.reg-buttons {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 30px 6px 30px;
+}
+
+.reg-buttons:hover {
+    color: cyan;
+    box-shadow: 1px 1px 1px 1px blue;
+    text-shadow: 2px 2px blue;
+}
+
+.reg-buttons-td {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+@keyframes reg-form-anim {
+    from {
+        opacity: 0.3;
+        transform: translateY(20px);
+    }
+}

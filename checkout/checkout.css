@@ -1,0 +1,128 @@
+body {
+    background: url(../homepage/home-bg.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.member-table {
+    margin-left: 22.5%;
+    padding: 1vw;
+    font-family: 'Titillium Web';
+    border-spacing: 10px;
+    border: 1px solid black;
+    background: white;
+}
+
+.left-td {
+    padding-right: 2vw;
+}
+
+.total-box {
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border-spacing: 20px;
+    background: rgb(30, 30, 30);
+    position: absolute;
+    font-family: 'Titillium Web';
+    margin-left: 60%;
+    margin-top: -8%;
+}
+
+.total-box tr td {
+    width: 205px;
+    padding-left: 20px;
+}
+
+.member-table tr td:not(.left-td) {
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.member-table tr td input {
+    border: none;
+    background: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Titillium Web';
+    padding-right: 10px;
+}
+
+.btnChangeAddress {
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 47.5vw;
+    margin-top: 11.5vw;
+    cursor: pointer;
+}
+
+.btnChangeAddress:hover {
+    background: black;
+    color: white;
+}
+
+/* .checkout-table,
+.checkout-table tr,
+.checkout-table tr td {
+    border: 1px solid black !important;
+    background: white !important;
+    color: black !important;
+} */
+
+.checkout-table {
+    background: rgb(30, 30, 30);
+    color: white;
+    margin: 0 auto;
+    border-spacing: 1vw;
+    border-radius: 7px;
+    font-family: 'Titillium Web';
+}
+
+.checkout-table tr td {
+    padding: 15px;
+}
+
+.left-checkout-td {
+    width: 210px;
+}
+
+.checkout-inp {
+    width: 500px;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+}
+
+.btnCheckout, .btnCancel {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    margin-left: 35%;
+}
+
+.btnCheckout:hover {
+    background: cyan;
+}
+
+.btnCancel:hover {
+    background: red;
+    color: white;
+}
+
+/* .member-table,
+.member-table tr,
+.member-table tr td {
+    border: 1px solid black !important;
+    background: white !important;
+} */

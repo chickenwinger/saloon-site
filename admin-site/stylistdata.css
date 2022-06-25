@@ -1,0 +1,283 @@
+body {
+    background: url('stylist-bg.png') center fixed;
+    background-size: contain;
+}
+
+.stylist-title {
+    font-family: 'Allan';
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    text-shadow: 5px 5px 2px goldenrod;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.stylist-container {
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    border-spacing: 2vw;
+    animation: stylist-container 1s forwards;
+}
+
+@keyframes stylist-container {
+    from {
+        transform: translateY(300px);
+    }
+}
+
+.stylistimg-td {
+    width: 260px;
+}
+
+.stylistimg-td img {
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px grey;
+}
+
+.stylist-content {
+    font-family: Arial;
+    color: black;
+    font-size: 18px;
+    padding-left: 1vw;
+}
+
+.hidden-content {
+    height: 0;
+    margin-top: 487px;
+    width: 21.3%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    border-radius: 5px;
+    opacity: 0;
+    color: white;
+    overflow: hidden;
+}
+
+.stylist-hidden {
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 100%;
+    opacity: 0;
+}
+
+.stylist-hidden2 {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 100%;
+    opacity: 0;
+}
+
+.btn-delete {
+    margin-left: 400px;
+    margin-top: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-delete i {
+    font-size: 50px;
+    color: white;
+}
+
+.btn-delete i:hover {
+    color: red;
+}
+
+.remove-bg {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.remove-table {
+    background: white;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: 16%;
+    left: 50%;
+    border-radius: 10px;
+    z-index: 7000;
+}
+
+.remove-table tr td {
+    padding: 2vw;
+    font-size: 18px;
+}
+
+.close-remove {
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    position: fixed;
+    top: 0;
+}
+
+.btn-btn,
+.btn-btn2 {
+    margin-left: -6px;
+    margin-top: -20px;
+    width: 100px;
+    position: absolute;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 10px;
+    background: white;
+    outline: none;
+}
+
+.btn-btn2 {
+    border: 3px solid red;
+    color: red;
+}
+
+.btn-btn:hover {
+    background: black;
+    color: white;
+}
+
+.btn-btn2:hover {
+    background: red;
+    color: white;
+}
+
+.newstylist-bg {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.close-newstylist-bg {
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.newstylist-table {
+    background: url(../homepage/home-bg.jpg) center fixed no-repeat;
+    position: absolute;
+    z-index: 7000;
+    width: 900px;
+    padding: 2vw;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: 5%;
+    border-radius: 8px;
+    animation: newstylist-table 1s forwards;
+}
+
+@keyframes newstylist-table {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+.newstylist-table tr td {
+    padding-top: 1vw;
+}
+
+.newstylist-td input,
+.newstylist-td textarea {
+    width: 100%;
+}
+
+.btn-add-hover {
+    position: absolute;
+    cursor: pointer;
+    z-index: 98;
+    right: 13%;
+    top: 21.8%;
+    width: 35px;
+    background: white;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 12px 0 12px 15px;
+    white-space: nowrap;
+}
+
+.btn-add-new {
+    position: absolute;
+    z-index: 99;
+    right: 13%;
+    cursor: pointer;
+    width: 50px;
+    height: 48px;
+    border: 4px solid white;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 2px 0 0 1px;
+    outline: none;
+}
+
+.btnAdd, .btnReset {
+    color: black;
+    font-size: 15px;
+    width: 120px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 8px;
+    border: 3px solid black;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 60%;
+}
+
+.btnAdd {
+    color: limegreen;
+    border: 3px solid limegreen;
+    margin-left: 80%;
+}
+
+.btnAdd:hover {
+    color: white;
+    background: limegreen;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.btnReset:hover {
+    color: white;
+    background: black;
+}
+
+#close-addnew {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 34%;
+    margin-top: -4.5%;
+    font-size: 32px;
+}
+
+#close-addnew:hover {
+    transform: rotate(180deg);
+    color: red;
+    transition: 0.5s;
+}

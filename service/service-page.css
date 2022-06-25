@@ -1,0 +1,77 @@
+body {
+    background: url(../homepage/home-bg.jpg) center fixed;
+    background-size: cover;
+    font-family: 'Titillium Web';
+}
+
+.table1 {
+    margin: 4vw auto;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    
+}
+
+.content1 {
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 35px;
+    height: 100px;
+    width: 350px;
+}
+
+.content2 {
+    word-wrap: break-word;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.content3 {
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 25px;
+    width: 350px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 300px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: cyan;
+    border: 2px solid cyan;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.select1{
+    width: 180px;
+    height: 30px;
+    border-radius: 3%;
+    border: 3px solid black;
+}
+
+.service-img {
+    height: 500px;
+    padding-right: 40px;
+}
+
+.fa-arrow-circle-left:hover {
+    color: cyan;
+}
+
+/* table, tr, td {
+    background: white !important;
+    border: 1px solid black !important;
+} */

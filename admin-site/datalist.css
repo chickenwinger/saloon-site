@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../all_bg.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* .product-table,
+.product-table tr,
+.product-table tr td {
+    border: 1px solid black;
+} */
+
+.filter-bg {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, black 3%, transparent);
+    top: 0;
+    z-index: 99;
+}
+
+.searchbar {
+    position: sticky;
+    left: 24%;
+    top: 5%;
+    width: 50vw;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    z-index: 9999;
+    outline: none;
+    padding: 5px 1vw 5px 1vw;
+}
+
+.btn-add-new {
+    position: absolute;
+    z-index: 99;
+    right: 16%;
+    cursor: pointer;
+    width: 50px;
+    height: 48px;
+    border: 4px solid white;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    margin-top: 1vw;
+    overflow: hidden;
+    padding: 2px 0 0 1px;
+    outline: none;
+}
+
+.btn-add-size {
+    position: absolute;
+    right: 58.5%;
+    margin-top: -4px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 4px solid white;
+    background: black;
+    color: white;
+    overflow: hidden;
+    padding: 2px 0 0 1px;
+    outline: none;
+}
+
+.btn-add-size:hover {
+    background: lime;
+}
+
+.btn-add-hover {
+    position: absolute;
+    cursor: pointer;
+    z-index: 98;
+    right: 16%;
+    top: 29%;
+    width: 35px;
+    background: white;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 12px 0 12px 15px;
+    white-space: nowrap;
+}
+
+.product-table {
+    margin: 0 auto;
+    background: white;
+    color: black !important;
+    border-radius: 10px;
+}
+
+.img-td {
+    padding: 0.2vw 4vw 0 0.2vw;
+    height: 300px;
+    width: 330px;
+}
+
+.img-td img {
+    border-radius: 10px;
+}
+
+.product-content {
+    width: 600px;
+    padding-right: 30px;
+}
+
+.product-content2 {
+    white-space: nowrap;
+    width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.show-more,
+.show-less {
+    position: absolute;
+    color: grey;
+    text-decoration: underline;
+    margin-left: 33%;
+    margin-top: -1.1%;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+.show-more:hover,
+.show-less:hover {
+    transition: 0.3s;
+    transform: translateY(-2px);
+    text-shadow: 5px 5px 2px lightgrey;
+}
+
+.show-less {
+    display: none;
+}
+
+.btnEditProduct,
+.btnDelProduct {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btnEditProduct {
+    margin-left: 13vw;
+    transition: 0.5s;
+}
+
+.btnDelProduct {
+    margin-left: 17vw;
+    transition: 0.5s;
+}
+
+.btnEditProduct:hover {
+    transform: translateY(-5px);
+    color: limegreen;
+    text-shadow: 5px 5px 5px grey;
+    transition: 0.5s;
+}
+
+.btnDelProduct:hover {
+    transform: translateY(-5px);
+    color: red;
+    text-shadow: 5px 5px 5px grey;
+    transition: 0.5s;
+}
+
+.cfm-del-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.del-popup-close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1001;
+}
+
+.del-popup {
+    position: absolute;
+    width: 230px;
+    height: 140px;
+    background: white;
+    padding: 2vw;
+    left: 50%;
+    margin-left: -115px;
+    margin-top: 15%;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1002;
+    animation: del-popup 0.5s forwards;
+}
+
+@keyframes del-popup {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.btnCfmDel, .btnCancel {
+    margin: 13px;
+    width: 85px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid black;
+    background: black;
+    outline: none;
+}
+
+.btnCfmDel {
+    background: red !important;
+    border: 2px solid red !important;
+}
+
+.btnCfmDel:hover {
+    background: white !important;
+    color: red;
+}
+
+.btnCancel:hover {
+    background: white !important;
+    color: black;
+}
+
+
+
+/* POP-UP FORMS START */
+.popup-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999999;
+    display: none;
+}
+
+.popup-table {
+    position: absolute;
+    left: 50%;
+    margin-left: -353px;
+    margin-top: 3%;
+    opacity: 0.8;
+    background-color: black;
+    border: 2px solid white;
+    animation: popup-table 1s forwards;
+}
+
+@keyframes popup-table {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* .popup-table,
+.popup-table tr,
+.popup-table tr td {
+    background: white !important;
+    border: 1px solid black !important;
+    color: black !important;
+    opacity: 1 !important;
+} */
+
+.popup-table tr td {
+    height: 35px;
+    width: 400px;
+    padding: 10px 30px 10px 30px;
+}
+
+.popup-table tr td input,
+.popup-table tr td select,
+.popup-table tr td textarea {
+    width: 380px;
+    height: 25px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border: 1px solid cyan;
+}
+
+.popup-table tr td textarea {
+    height: 40px !important;
+}
+
+.popup-table tr td select {
+    width: 200px;
+}
+
+.btn-close-popup {
+    float: right;
+    font-weight: bold;
+    width: 2vw;
+    background-color: rgb(235, 60, 60);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-close-popup:hover {
+    cursor: pointer;
+    background-color: rgb(218, 37, 37);
+    color: white;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to right, black 0%, cyan 50%, black 100%);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup-labels {
+    color: cyan;
+    width: 180px !important;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnUpdate,
+.btnReset {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: rgb(23, 243, 133);
+    margin-top: -1vw;
+    margin-left: 25vw;
+    width: 30%;
+    padding: 8px;
+    position: absolute;
+}
+
+.btnUpdate:hover {
+    cursor: pointer;
+    background: rgb(5, 194, 99);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.btnReset {
+    margin-left: 4vw !important;
+    background: rgb(240, 80, 80) !important;
+}
+
+.btnReset:hover {
+    cursor: pointer;
+    background: rgb(218, 38, 38);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+/* POP-UP FORMS END */
+
+.add-size-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+}
+
+.add-size-table {
+    width: 300px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 15%;
+    padding: 2vw;
+    border-radius: 5px;
+    z-index: 20000;
+}
+
+.close-add-size {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15000;
+}
+
+.btn-add-size2, .cancel-add-size {
+    border-radius: 5px;
+    background: black;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border: none;
+    width: 80px;
+    padding: 5px;
+}
+
+.btn-add-size2 {
+    background: lime;
+    font-weight: 700;
+}

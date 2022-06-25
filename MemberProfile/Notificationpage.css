@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+body {
+    background: url(member-bg.png) center fixed no-repeat;
+    background-size: cover;
+}
+
+.notification {
+    margin: 0 auto;
+    width: 60%;
+    height: 8vw;
+    border: none;
+    padding: 0;
+    box-shadow: 5px 8px 10px 1px pink;
+    margin-left: 21vw;
+    overflow: hidden;
+    text-align: justify;
+    background: #202020;
+    color: pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notification tr td:not(.whiteline) {
+    padding: 5px;
+}
+
+
+/* For Table layout */
+
+
+/* 
+.notification,
+.notification tr,
+.notification tr td {
+    border: 1px solid black !important;
+    background: white !important;
+} */
+
+.viewbutton {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+    width: 100px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.viewbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.viewbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.viewbutton:hover span {
+    padding-right: 15px;
+}
+
+.viewbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}

@@ -1,0 +1,305 @@
+/* .buttons {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.buttonss {
+    padding: 20px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+} */
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.contene {
+    display: inline-block;
+}
+
+
+/* ----------------------------------------------------------------UPcominng Button------------------------------------------------ */
+
+.upcoming {
+    --offset: 10px;
+    --border-size: 5px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #FF6347;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    -webkit-transition: background .8s ease;
+    transition: background .8s ease;
+    margin-left: -35vw;
+    margin-top: 8vw;
+}
+
+.upcoming:hover {
+    background: rgba(100, 0, 0, 0.03);
+}
+
+.ubutton__horizontal,
+.ubutton__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    -webkit-transition: -webkit-transform .8s ease;
+    transition: -webkit-transform .8s ease;
+    transition: transform .8s ease;
+    transition: transform .8s ease, -webkit-transform .8s ease;
+    will-change: transform;
+}
+
+.ubutton__horizontal::before,
+.ubutton__vertical::before {
+    content: '';
+    position: absolute;
+    border: inherit;
+}
+
+.ubutton__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+}
+
+.ubutton__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+}
+
+.upcoming:hover .ubutton__horizontal {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.ubutton__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+}
+
+.ubutton__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+}
+
+.upcoming:hover .ubutton__vertical {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+
+/* -----------------------------------------------------------Upcoming END---------------------------------------------- */
+
+
+/* --------------------------------------------------------notification button---------------------------------------------------- */
+
+.notification {
+    width: 436.61px;
+    --offset: 10px;
+    --border-size: 5px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #FF6347;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    -webkit-transition: background .8s ease;
+    transition: background .8s ease;
+    margin-left: 35vw;
+    margin-top: -7vw;
+}
+
+.notification:hover {
+    background: rgba(100, 0, 0, 0.03);
+}
+
+.nbutton__horizontal,
+.nbutton__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    -webkit-transition: -webkit-transform .8s ease;
+    transition: -webkit-transform .8s ease;
+    transition: transform .8s ease;
+    transition: transform .8s ease, -webkit-transform .8s ease;
+    will-change: transform;
+}
+
+.nbutton__horizontal::before,
+.nbutton__vertical::before {
+    content: '';
+    position: absolute;
+    border: inherit;
+}
+
+.nbutton__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+}
+
+.nbutton__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+}
+
+.notification:hover .nbutton__horizontal {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.nbutton__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+}
+
+.nbutton__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+}
+
+.notification:hover .nbutton__vertical {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+
+/* ----------------------------------------------------------END notification button------------------------------ */
+
+
+/* ----------------------------------------------------------View Profile button------------------------------ */
+
+.view {
+    width: 436.61px;
+    --offset: 10px;
+    --border-size: 5px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #FF6347;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    -webkit-transition: background .8s ease;
+    transition: background .8s ease;
+    margin-top: 8vw;
+}
+
+.view:hover {
+    background: rgba(100, 0, 0, 0.03);
+}
+
+.vbutton__horizontal,
+.vbutton__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    -webkit-transition: -webkit-transform .8s ease;
+    transition: -webkit-transform .8s ease;
+    transition: transform .8s ease;
+    transition: transform .8s ease, -webkit-transform .8s ease;
+    will-change: transform;
+}
+
+.vbutton__horizontal::before,
+.vbutton__vertical::before {
+    content: '';
+    position: absolute;
+    border: inherit;
+}
+
+.vbutton__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+}
+
+.vbutton__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+}
+
+.view:hover .vbutton__horizontal {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.vbutton__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+}
+
+.vbutton__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+}
+
+.view:hover .vbutton__vertical {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+
+/* ----------------------------------------------------------END View Profile button------------------------------ */

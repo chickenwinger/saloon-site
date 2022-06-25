@@ -1,0 +1,81 @@
+body {
+    background: url(homepage/home-bg.jpg) center fixed no-repeat;
+    background-size: cover;
+    font-family: Verdana;
+}
+
+.select-table {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.select-select {
+    font-size: 20px;
+}
+
+.btnSelect {
+    font-size: 20px;
+    padding: 2px 10px 2px 10px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btnSelect:hover {
+    background: white;
+    color: black;
+}
+
+.cart-table {
+    margin: 0 auto;
+    color: cyan;
+    font-family: 'Titillium Web';
+    background: rgb(30, 30, 30);
+    border-radius: 20px;
+}
+
+.cart-table tr td {
+    width: 450px;
+}
+
+.view-product-btn {
+    width: 121.5px;
+    height: 161px;
+    padding: 10px 30px 10px 30px;
+    position: absolute;
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateX(-181px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.view-product-btn div {
+    margin-top: 55%;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    color: white;
+}
+
+.view-product-btn:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.appointment-status {
+    width: 100px;
+    border: 2px solid red;
+    border-radius: 3px;
+    color: red;
+    background: rgb(30, 30, 30);
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    margin-left: 64%;
+    margin-top: 8px;
+}

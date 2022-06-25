@@ -1,0 +1,67 @@
+body {
+    background: url(homepage/home-bg.jpg) center fixed no-repeat;
+    background-size: cover;
+    font-family: Arial;
+}
+
+.appointment-table {
+    margin: 0 auto;
+    border: 1px solid black;
+    background: rgb(30, 30, 30);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.image-td {
+    width: 250px;
+    padding: 8px 8px 4px 8px;
+}
+
+.image-td img {
+    border-radius: 5px;
+}
+
+.appointment-content {
+    width: 670px;
+    padding-left: 30px;
+    color: cyan;
+    font-family: Verdana;
+}
+
+.appointment-status {
+    width: 100px;
+    border: 2px solid cyan;
+    border-radius: 3px;
+    color: cyan;
+    background: rgb(30, 30, 30);
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    margin-left: 74.7%;
+    margin-top: 8px;
+}
+
+.upc-rental {
+    position: fixed;
+    background: white;
+    border: 3px solid black;
+    padding: 1vw;
+    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    top: 20%;
+    right: -15%;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    z-index: 99999;
+    transition: 0.5s;
+}
+
+.upc-rental:hover {
+    right: 0;
+    background: black;
+    color: white;
+    box-shadow: 10px 10px 10px grey;
+    transition: 0.5s;
+}

@@ -1,0 +1,152 @@
+.addproduct-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 99999;
+    display: none;
+}
+
+.addproduct-popup {
+    position: absolute;
+    left: 50%;
+    margin-left: -375px;
+    margin-top: 85px;
+    opacity: 0.8;
+    background-color: black;
+    box-shadow: 1px 2px cyan;
+}
+
+.addproduct-popup tr td{
+    height: 35px;
+    width: 300px;
+    padding: 10px 30px 10px 30px;
+}
+
+
+/* .addproduct-popup tr td, .addproduct-popup, .addproduct-popup tr {
+    border: 1px solid black;
+} */
+
+.ptbtn{
+    float: right;
+    font-weight: bold;
+    width: 2vw;
+    background-color: rgb(235, 60, 60);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.ptbtn:hover{
+    cursor: pointer;
+    background-color: rgb(218, 37, 37);
+    color: white;
+}
+
+.prodtitle{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,224,213,1) 35%, rgba(0,212,255,1) 100%);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ppop{
+    color: cyan;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pubtn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: rgb(23, 243, 133);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 100%;
+    padding: 8px;
+}
+
+.pubtn:hover{
+    cursor: pointer;
+    background: rgb(5, 194, 99);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.qpubtn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: rgb(23, 243, 133);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 50%;
+    padding: 8px;
+}
+
+.qpubtn:hover{
+    cursor: pointer;
+    background: rgb(5, 194, 99);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.pubtn1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: rgb(240, 80, 80);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 100%;
+    padding: 8px;
+}
+
+.pubtn1:hover{
+    cursor: pointer;
+    background: rgb(218, 38, 38);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.qpubtn1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: rgb(240, 80, 80);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 50%;
+    padding: 8px;
+}
+
+.qpubtn1:hover{
+    cursor: pointer;
+    background: rgb(218, 38, 38);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.prodcategory{
+    width: 75%;
+    padding: 5px;
+    border: solid 2px cyan;
+}
+
+.genderselect{
+    color: cyan;
+    
+}

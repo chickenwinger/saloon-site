@@ -1,0 +1,220 @@
+    body {
+        background: linear-gradient(to bottom, rgb(30, 30, 30) 3%, pink 85%) fixed no-repeat;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .bookings {
+        height: 8vw;
+        width: 836px;
+        padding: 10px;
+        box-shadow: 5px 8px 10px 1px pink;
+        margin-left: 8vw;
+        overflow: hidden;
+        text-align: justify;
+        background: #202020;
+        color: pink;
+        border-spacing: 0;
+    }
+    
+    .left {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        width: 130px;
+    }
+    
+    .right {
+        padding-right: 100px;
+        padding-left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    h1 {
+        padding: 30px;
+    }
+    
+    #acceptbtn {
+        border: 2px solid lime;
+        background: white;
+        color: lime;
+        float: right;
+        cursor: pointer;
+        width: 6vw;
+        height: 2vw;
+        font-family: verdana;
+        font-weight: 200;
+        font-size: 15px;
+    }
+    
+    #acceptbtn:hover {
+        color: white;
+        background: lime;
+        border: 2px solid white;
+    }
+    
+    #declinebtn {
+        border: 2px solid red;
+        background: white;
+        color: red;
+        float: right;
+        cursor: pointer;
+        width: 6vw;
+        height: 2vw;
+        font-family: verdana;
+        font-weight: 200px;
+        font-size: 15px;
+    }
+    
+    #declinebtn:hover {
+        color: white;
+        background: red;
+        border: 2px solid white;
+    }
+    
+    .backbtn {
+        float: left;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .modal2 {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .notesToCustomercontent {
+        background-color: #fefefe;
+        margin: 200px;
+        border: 1px solid #888;
+        width: 40vw;
+        height: 20vw;
+        animation: notestocustomeranimation 1s forwards;
+        background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+    }
+    
+    @keyframes notestocustomeranimation {
+        from {
+            opacity: 0.2;
+            transform: translateY(-50%);
+        }
+    }
+    
+    .reasonToDeclinecontent {
+        background-color: #fefefe;
+        margin: 100px;
+        border: 1px solid #888;
+        width: 40vw;
+        height: 20vw;
+        animation: declineanimation 1s forwards;
+        background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+    }
+    
+    @keyframes declineanimation {
+        from {
+            opacity: 0.2;
+            transform: translateY(-50%);
+        }
+    }
+    
+    .close {
+        color: white;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .close2 {
+        color: white;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .close2:hover,
+    .close2:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .acceptokaybutton {
+        outline: none;
+        padding: 5px;
+        width: 10vw;
+        height: 2.6vw;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        padding-bottom: 6px;
+    }
+    
+    .acceptokaybutton:hover,
+    .declineokaybutton:hover {
+        background: cyan;
+    }
+    
+    .declineokaybutton {
+        outline: none;
+        padding: 5px;
+        width: 10vw;
+        height: 2.6vw;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        padding-bottom: 6px;
+    }
+    
+    .ifnonotification {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 24px;
+        text-align: left;
+        width: 50vw;
+        height: 30vw;
+    }
+    
+    .notetocustomer,
+    .reasontodecline {
+        width: 20vw;
+        height: 5vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+    }

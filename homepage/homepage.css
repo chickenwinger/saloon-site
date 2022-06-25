@@ -1,0 +1,185 @@
+body {
+    padding: 0;
+}
+
+/* table, tr, td {
+    border: 1px solid black;
+} */
+
+.slider-container {
+    background: black;
+    width: 100%;
+    height: 650px;
+    position: relative;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    width: auto;
+    height: 95.5%;
+    padding: 16px;
+    margin-top: -21px;
+    color: cyan;
+    font-weight: bold;
+    font-size: 32px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    line-height: 500px;
+    vertical-align: middle;
+}
+
+.next {
+    right: 0;
+    text-align: right;
+}
+
+.prev {
+    left: 0;
+    text-align: left;
+}
+
+.next:hover {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.prev:hover {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.slider-items {
+    display: none;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.slider-items img {
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.slider-caption {
+    color: #f2f2f2;
+    font-size: 24px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 7px;
+    width: 30px;
+    margin: 0;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+
+.dotss {
+    position: absolute;
+    text-align: center;
+    transform: translate(45vw, -6vw);
+}
+
+.active,
+.dot:hover {
+    background-color: cyan;
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
+.home-bg {
+    background: url('home-bg.jpg') center fixed no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 50px auto 50px auto;
+    margin-top: -20px;
+}
+
+.service-part {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.service-part tr:not(:first-child) td {
+    padding: 2vw;
+}
+
+.service-cat {
+    width: 400px;
+    height: 200px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    transition: 0.5s;
+}
+
+.service-cat:hover {
+    box-shadow: 5px 5px 10px black;
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
+
+.why-choose {
+    font-family: Calibri;
+    text-align: center;
+    width: 100%;
+    box-shadow: 3px 3px 15px black;
+    position: relative;
+}
+
+.why-choose p {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+}
+
+.btn-aboutus {
+    font-size: 20px;
+    background: rgb(30, 30, 30);
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn-aboutus:hover {
+    background: white;
+    color: black;
+    box-shadow: 5px 5px 10px black;
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+/* .service-part, .service-part tr, .service-part tr td {
+    border: 1px solid black !important;
+    background: white !important;
+} */

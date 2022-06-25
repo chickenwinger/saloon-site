@@ -1,0 +1,156 @@
+body {
+    background: url(../homepage/home-bg.jpg) center fixed;
+    background-size: cover;
+    font-family: 'Titillium Web';
+}
+
+.table1 {
+    margin: 4vw auto;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 60%;
+}
+
+.content1 {
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 35px;
+    height: 100px;
+    width: 350px;
+
+}
+
+.content2 {
+    word-wrap: break-word;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 350px;
+    text-align: center;
+
+}
+
+.content3 {
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 25px;
+    width: 350px;
+
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 300px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: cyan;
+    border: 2px solid cyan;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.select1 {
+    width: 180px;
+    height: 30px;
+    border-radius: 3%;
+    border: 3px solid black;
+    padding-left: 10px;
+}
+
+.date1 {
+    width: 165px;
+    border-radius: 3%;
+    border: 3px solid black;
+    padding-left: 10px
+}
+
+.outfit-img {
+    height: 500px;
+    padding-right: 40px;
+}
+
+.fa-arrow-circle-left:hover {
+    color: cyan;
+}
+
+.btn-size-charts {
+    position: absolute;
+    transform: translate(10px, 2px);
+    padding: 5px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+}
+
+.btn-size-charts:hover {
+    background: cyan;
+    color: black;
+}
+
+.size-bg {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+.size-container {
+    position: absolute;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    margin-top: 30px;
+    z-index: 999999;
+    display: block;
+    text-align: center;
+    animation: size-container 1s forwards;
+}
+
+.size-container img {
+    border-radius: 10px;
+}
+
+@keyframes size-container {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.close2 {
+    transform: translate(1460px, 20px);
+    cursor: pointer;
+}
+
+.close-size {
+    z-index: 10000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+/* table,
+tr,
+td {
+    background: white !important;
+    border: 1px solid black !important;
+} */

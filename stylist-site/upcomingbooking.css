@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(to bottom, rgb(30, 30, 30) 3%, pink 85%) fixed no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.ifnonotification {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 24px;
+    text-align: left;
+    width: 50vw;
+    height: 30vw;
+}
+
+.bookings {
+    height: 8vw;
+    width: 836px;
+    padding: 10px;
+    box-shadow: 5px 8px 10px 1px pink;
+    margin-left: 8vw;
+    overflow: hidden;
+    text-align: justify;
+    background: #202020;
+    color: pink;
+    border-spacing: 0;
+}
+
+.left {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    width: 130px;
+}
+
+.right {
+    padding-right: 100px;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    padding: 30px;
+}
+
+.ifnonotification {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 24px;
+    text-align: left;
+    width: 50vw;
+    height: 30vw;
+}
